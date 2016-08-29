@@ -1,18 +1,15 @@
 #!/bin/bash
-set -e
+set -e #to dtect error
 #to install mew
 echo "compiling mew binary for package manager"
 #going to c files to compile its binary for mew packagemanager
-cd binary_files/package_manager
-gcc package_manager.c -o pm
-mv pm /usr/bin/
-echo "binary of package manager installed"
-#going back to main folder
-cd ..
-
-echo "installing mew"
-chmod +x mew
-cp mew /usr/bin/
-
-echo " installation completed "
-echo " 	launch it by typing ---> mew"
+cd binary_files/package_manager   # dir with c code
+gcc package_manager.c -o pm       # compiling binary with name of pm
+mv pm /usr/bin/                   # moving to bin
+echo "binary of package manager installed" # to tell first step is complete
+cd .. && cd ..  #going back to main folder
+echo "installing mew" #starting last step
+chmod +x mew  #fixing permission
+cp mew /usr/bin/ #moving to bin
+echo "installation completed " #final message to tell eveyting went fine
+echo "launch it by typing ---> mew" #telling user how to run it
