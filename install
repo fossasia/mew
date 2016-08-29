@@ -1,9 +1,14 @@
+#!/bin/bash
 #to install mew
 echo "compiling mew binary for package manager"
-cd binary_files
+#going to c files to compile its binary for mew packagemanager
+cd binary_files/package_manager
 gcc package_manager.c -o pm
 mv pm /usr/bin/
 echo "binary of package manager installed"
+#going back to main folder
+cd ..
+cd ..
 echo "installing mew"
 chmod +x mew
 cp mew /usr/bin/

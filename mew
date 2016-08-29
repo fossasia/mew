@@ -5,6 +5,13 @@
 # it can talk to every pokemon
 # its cute
 # its legendary
-# its cute  
+# its cute
 echo "Mew - μ"
 
+case "$OSTYPE" in
+  solaris*) echo "SOLARIS" ;;
+  darwin*)  echo "OSX" ;;
+  linux*)   echo "LINUX" ;;
+  bsd*)     echo "BSD" ;;
+  *)        echo "unknown: $OSTYPE" ;;
+esac
