@@ -1,0 +1,12 @@
+#to install mew
+echo "compiling mew binary for package manager"
+cd binary_files
+gcc package_manager.c -o pm
+mv pm /usr/bin/
+echo "binary of package manager installed"
+echo "installing mew"
+chmod +x mew
+cp mew /usr/bin/
+
+echo " installation completed "
+echo " 	launch it by typing ---> mew"
