@@ -15,3 +15,6 @@ it will be translated to
 apt-get install VLC
 
 it will translate package manager commands to the native package manager command of the distro 
+
+
+different package manager commands to be used --> check commands.md
