@@ -9,6 +9,11 @@ implemented in seperate .c files, and provided seperately during release
 
 //TODO :-
 
-//Currently: Find a way of implementing AST's that's not hideously expensive
+//Currently: Find a way of implementing an AST
 //*Share memoru b/w multiple modules?
 //*Or implement in a single file?
+
+
+//TODO
+//Move into binary_files/package_manager
+//when done with the code
