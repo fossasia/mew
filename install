@@ -7,7 +7,8 @@
 #then
 set -e #to detect error
 wget https://github.com/Catergos/mew/archive/test-1.zip #downloading sources
-zip
+#zip
+unzip test-1.zip #extract Downloaded Zip
 #to install mew
 
 echo "compiling mew binary for package manager"
