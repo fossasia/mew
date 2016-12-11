@@ -6,21 +6,8 @@
 #if [$OS -eq $OS_req  ]
 #then
 set -e #to detect error
-wget https://github.com/Catergos/mew/archive/test-1.zip #downloading sources
+wget https://github.com/Bashmug/mew/archive/test-1.zip #downloading sources
 #zip
 unzip test-1.zip #extract Downloaded Zip
 #to install mew
 
-echo "compiling mew binary for package manager"
-#going to c files to compile its binary for mew packagemanager
-cd binary_files/package_manager   # dir with c code
-gcc package_manager.c -o pm       # compiling binary with name of pm
-mv pm /usr/bin/                   # moving to bin
-echo "binary of package manager installed" # to tell first step is complete
-cd .. && cd ..  #going back to main folder
-echo "installing mew" #starting last step
-chmod +x mew  #fixing permission
-cp mew /usr/bin/ #moving to bin
-echo "installation completed " #final message to tell eveyting went fine
-echo "launch it by typing ---> mew" #telling user how to run it
-#fi
