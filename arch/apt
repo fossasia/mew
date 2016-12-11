@@ -1,11 +1,11 @@
 #!/bin/bash
 n=0
-for i 
+for i
 do
   echo $i
   array[$n]=$i
   ((++n))
-done 
+done
 
 echo array testing first two elements
 echo ${array[0]}
