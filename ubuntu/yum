@@ -2,18 +2,25 @@
 n=0
 for i
 do
-  echo $i
   array[$n]=$i
   ((++n))
 done
-
-echo array testing first two elements
-echo ${array[0]}
-echo ${array[1]}
-
 case "${array[0]}" in
-  "-U") apt update ${array[1]}
+  "install") echo command translated to --> apt install ${array[1]}
+  apt install ${array[1]}
   ;;
-  "-S") apt install ${array[1]}
+  "--nodeps")
+          case "${array[1]}" in
+          "remove") echo command translated to --> apt remove ${array[2]}
+          apt remove ${array[2]}
+          ;;
+          *)echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
+          ;;
+          esac
+  ;;
+  "remove") echo command translated to --> apt autoremove ${array[1]}
+  apt autoremove ${array[1]}
+  ;;
+  *) echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
   ;;
 esac

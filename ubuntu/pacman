@@ -22,4 +22,5 @@ case "${array[0]}" in
   apt upgrade
   ;;
   *) echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
+  ;;
 esac
