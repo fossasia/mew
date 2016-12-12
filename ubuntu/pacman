@@ -6,14 +6,16 @@ do
   array[$n]=$i
   ((++n))
 done
-
-echo array testing first two elements
-echo ${array[0]}
-echo ${array[1]}
-
 case "${array[0]}" in
-  "-U") apt update ${array[1]}
-  ;;
   "-S") apt install ${array[1]}
   ;;
+  "-R") apt remove ${array[1]}
+  ;;
+  "-Syy") apt update
+  ;;
+  "-Qu") apt list --upgradable
+  ;;
+  "-Syu") apt upgrade
+  ;;
+  *) echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
 esac
