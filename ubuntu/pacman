@@ -2,7 +2,6 @@
 n=0
 for i
 do
-  echo $i
   array[$n]=$i
   ((++n))
 done
