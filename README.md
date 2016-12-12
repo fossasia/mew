@@ -15,3 +15,8 @@ package manger translator
 * update software database (pacman -Syy)
 * show updatable packages (pacman -Qu)
 * update all (pacman -Syu)
+
+### yum to apt can 
+* install package (yum install PACKAGE)
+* remove package (yum --nodeps remove PACKAGE)
+* remove package+dependencies	(yum remove PACKAGE)
