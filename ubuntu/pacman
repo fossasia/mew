@@ -7,15 +7,20 @@ do
   ((++n))
 done
 case "${array[0]}" in
-  "-S") apt install ${array[1]}
+  "-S") echo command translated to --> apt install ${array[1]}
+  apt install ${array[1]}
   ;;
-  "-R") apt remove ${array[1]}
+  "-R") echo command translated to --> apt remove ${array[1]}
+  apt remove ${array[1]}
   ;;
-  "-Syy") apt update
+  "-Syy") echo command translated to --> apt update
+  apt update
   ;;
-  "-Qu") apt list --upgradable
+  "-Qu") echo command translated to --> apt list --upgradable
+  apt list --upgradable
   ;;
-  "-Syu") apt upgrade
+  "-Syu") echo command translated to --> apt upgrade
+  apt upgrade
   ;;
   *) echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
 esac
