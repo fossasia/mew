@@ -15,9 +15,14 @@ case "${array[0]}" in
   "update") echo command translated to --> pacman -Syy
   pacman -Syy
   ;;
-  "-Qu") echo command translated to --> pacman list --upgradable
-  pacman list --upgradable
-  ;;
+#  "list")
+#  case "${array[1]}" in
+#    pattern )
+#      ;;
+#  esac
+#  echo command translated to --> pacman list --upgradable
+#  pacman list --upgradable
+#  ;;
   "upgrade") echo command translated to --> pacman -Syu
   pacman -Syu
   ;;

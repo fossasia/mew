@@ -10,7 +10,7 @@ package manger translator
  * cd mew
  * ./mew
  #### OR
- * will make a package later 
+ * will make a package later
 
 ## Why Mew in as a translator
  * short name
@@ -19,6 +19,12 @@ package manger translator
  * its cute
  * its legendary
  * its cute have i already told you so ?
+
+### apt to pacman can
+* install package (apt install PACKAGE)
+* remove package (apt remove PACKAGE)
+* update software database (apt update)
+* update all (apt upgrade)
 
 ### pacman to apt can
 * install package (pacman -S PACKAGE)
