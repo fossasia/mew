@@ -9,12 +9,12 @@ case "${array[0]}" in
   "install") echo command translated to --> pacman -S ${array[1]}
   pacman -S ${array[1]}
   ;;
-  "remove") echo command translated to --> pacman -R ${array[1]}
-  pacman -R ${array[1]}
-  ;;
-  "update") echo command translated to --> pacman -Syy
-  pacman -Syy
-  ;;
+  #"remove") echo command translated to --> pacman -R ${array[1]}
+  #pacman -R ${array[1]}
+  #;;
+  #"update") echo command translated to --> pacman -Syy
+  #pacman -Syy
+  #;;
 #  "list")
 #  case "${array[1]}" in
 #    pattern )

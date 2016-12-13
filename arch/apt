@@ -6,14 +6,21 @@ do
   ((++n))
 done
 case "${array[0]}" in
-  "install") echo command translated to --> pacman -S ${array[1]}
-  pacman -S ${array[1]}
+  "install")
+    echo command translated to --> pacman -S ${array[1]}
+    pacman -S ${array[1]}
   ;;
-  "remove") echo command translated to --> pacman -R ${array[1]}
-  pacman -R ${array[1]}
+  "remove")
+    echo command translated to --> pacman -R ${array[1]}
+    pacman -R ${array[1]}
   ;;
-  "update") echo command translated to --> pacman -Syy
-  pacman -Syy
+  "search")
+    echo command translated to --> pacman -Ss ${array[1]}
+    pacman -Ss ${array[1]}
+  ;;
+  "update")
+    echo command translated to --> pacman -Syy
+    pacman -Syy
   ;;
 #  "list")
 #  case "${array[1]}" in
@@ -23,8 +30,9 @@ case "${array[0]}" in
 #  echo command translated to --> pacman list --upgradable
 #  pacman list --upgradable
 #  ;;
-  "upgrade") echo command translated to --> pacman -Syu
-  pacman -Syu
+  "upgrade")
+    echo command translated to --> pacman -Syu
+    pacman -Syu
   ;;
   *) echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
   ;;

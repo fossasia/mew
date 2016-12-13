@@ -20,11 +20,12 @@ package manger translator
  * its legendary
  * its cute have i already told you so ?
 
-### apt to pacman can
-* install package (apt install PACKAGE)
+### apt/apt-get to pacman can
+* install package (apt install PACKAGE)/(apt-get install package)
 * remove package (apt remove PACKAGE)
 * update software database (apt update)
 * update all (apt upgrade)
+
 
 ### pacman to apt can
 * install package (pacman -S PACKAGE)
