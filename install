@@ -8,6 +8,6 @@
 set -e #to detect error
 wget https://github.com/Bashmug/mew/archive/test-1.zip #downloading sources
 #zip
-unzip test-1.zip #extract Downloaded Zip
+unzip test-2.zip #extract Downloaded Zip
 #to install mew
-
+./mew

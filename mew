@@ -7,7 +7,7 @@
 # its legendary
 # its cute
 echo "Mew - μ"
-
+#need to work on this scriptfor installation
 OS="`uname`"  #detect OS
 echo $OS
 #if $OS="Linux" use it later
@@ -22,5 +22,14 @@ echo $OS
   do
       if [[ -f $f ]];then
           echo Package manager: ${osInfo[$f]}
+            case ${osInfo[$f]} in
+              pacman )
+                  cd arch
+                  chmod +x * #dont know if this works
+                  sudo mv * /bin
+                ;;
+              *) echo "distro not supported yet make a pull request or a issue on https://github.com/Bashmug/mew"
+                ;;
+            esac
       fi
   done

@@ -6,9 +6,13 @@ package manger translator
 ## Any package manger command on any distro
 
 ## How to install
- install scripts not ready yet you can place the files in your bin to execute them
+ * clone https://github.com/Bashmug/mew.git
+ * cd mew
+ * ./mew
+ #### OR
+ * will make a package later 
 
- ## Why Mew in as a translator
+## Why Mew in as a translator
  * short name
  * its a pokemon
  * it can talk to every pokemon
