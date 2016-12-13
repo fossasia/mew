@@ -2,18 +2,30 @@
 n=0
 for i
 do
-  echo $i
   array[$n]=$i
   ((++n))
 done
-
-echo array testing first two elements
-echo ${array[0]}
-echo ${array[1]}
-
 case "${array[0]}" in
-  "update") echo update check
+  "install") echo command translated to --> pacman -S ${array[1]}
+  pacman -S ${array[1]}
   ;;
-  "install") pacman -S ${array[1]}
+  "remove") echo command translated to --> pacman -R ${array[1]}
+  pacman -R ${array[1]}
+  ;;
+  "update") echo command translated to --> pacman -Syy
+  pacman -Syy
+  ;;
+#  "list")
+#  case "${array[1]}" in
+#    pattern )
+#      ;;
+#  esac
+#  echo command translated to --> pacman list --upgradable
+#  pacman list --upgradable
+#  ;;
+  "upgrade") echo command translated to --> pacman -Syu
+  pacman -Syu
+  ;;
+  *) echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
   ;;
 esac
