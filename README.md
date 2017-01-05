@@ -17,7 +17,7 @@ package manger translator
  * its a pokemon
  * it can talk to every pokemon
  * its cute
- * its legendary
+ * its legend wait for it    dary
  * its cute have i already told you so ?
 
 ### apt/apt-get to pacman can
