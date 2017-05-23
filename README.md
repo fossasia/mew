@@ -40,4 +40,4 @@ package manger translator
 * remove package+dependencies	(yum remove PACKAGE)
 
 
-###### mew is copyright material of Pokemon comapny used without permission but it is used as non pokemon so things can have same name and different pourpouse right ?
+###### mew is copyright material of Pokemon company used without permission but it is used as non pokemon so things can have same name and different pourpouse right ?
