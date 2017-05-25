@@ -1,12 +1,12 @@
 # Mew
 package manger translator
 
-![alt text](https://github.com/Bashmug/mew/blob/master/graphics/logo.png "kind of a logo")
+![alt text](https://github.com/fossasia/mew/blob/master/graphics/logo.png "kind of a logo")
 
 ## Any package manger command on any distro
 
 ## How to install
- * clone https://github.com/Bashmug/mew.git
+ * clone https://github.com/fossasia/mew.git
  * cd mew
  * ./mew
  
