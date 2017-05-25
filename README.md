@@ -12,13 +12,10 @@ package manger translator
  #### OR
  * will make a package later
 
-## Why Mew in as a translator
- * short name
- * its a pokemon
- * it can talk to every pokemon
- * its cute
- * its legend wait for it    dary
- * its cute have i already told you so ?
+
+ Arch |pacman | Q | Qc | Qi | Ql | Qm | Qo | Qp | Qs | Qu | R | Rn | Rns | Rs | S | Sc | Scc | Sccc | Si | Sii | Sl | Ss | Su | Suy | Sw | Sy | U
+ --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+ Debian/Ubuntu| apt-get / apt |  | | | | | | | | | | | | remove| install| | | | | | | search| | | | |
 
 ### apt/apt-get to pacman can
 * install package (apt install PACKAGE)/(apt-get install package)
