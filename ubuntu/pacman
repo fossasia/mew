@@ -1,0 +1,26 @@
+#!/bin/bash
+n=0
+for i
+do
+  array[$n]=$i
+  ((++n))
+done
+case "${array[0]}" in
+  "-S") echo command translated to --> apt install ${array[1]}
+  apt install ${array[1]}
+  ;;
+  "-R") echo command translated to --> apt remove ${array[1]}
+  apt remove ${array[1]}
+  ;;
+  "-Syy") echo command translated to --> apt update
+  apt update
+  ;;
+  "-Qu") echo command translated to --> apt list --upgradable
+  apt list --upgradable
+  ;;
+  "-Syu") echo command translated to --> apt upgrade
+  apt upgrade
+  ;;
+  *) echo "send a pull request to https://github.com/fossasia/mew or make it an issue if its not working"
+  ;;
+esac
