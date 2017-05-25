@@ -28,7 +28,7 @@ echo $OS
                   chmod +x * #dont know if this works
                   sudo cp * /bin #make a detection script to detect if package already present
                 ;;
-              *) echo "distro not supported yet make a pull request or a issue on https://github.com/Bashmug/mew"
+              *) echo "distro not supported yet make a pull request or a issue on https://github.com/fossasia/mew"
                 ;;
             esac
       fi
