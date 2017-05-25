@@ -9,10 +9,7 @@ package manger translator
  * clone https://github.com/Bashmug/mew.git
  * cd mew
  * ./mew
- #### OR
- * will make a package later
-
-
+ 
 
 Arch | pacman | Q | Qc | Qi | Ql | Qm | Qo | Qp | Qs | Qu | R | Rn | Rns | Rs | S | Sc | Scc | Sccc | Si | Sii | Sl | Ss | Su | Suy | Sw | Sy | U
 :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--:
