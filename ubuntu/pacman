@@ -21,6 +21,6 @@ case "${array[0]}" in
   "-Syu") echo command translated to --> apt upgrade
   apt upgrade
   ;;
-  *) echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
+  *) echo "send a pull request to https://github.com/fossasia/mew or make it an issue if its not working"
   ;;
 esac
