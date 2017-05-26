@@ -1,0 +1,9 @@
+# This provides us with GCC binary support so we can run bash
+language: generic
+
+sudo: required
+
+before_install:
+    - ./mew
+
+install: sudo pacman -S vlc
