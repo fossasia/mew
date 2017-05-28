@@ -21,8 +21,14 @@ case "${array[0]}" in
   "-Syu") echo command translated to --> apt upgrade
   apt upgrade
   ;;
-  "-Ss") echo command translated to --> apt-cache search
-  apt-cache search
+  "-Ss") echo command translated to --> apt search
+  apt search
+  ;;
+  "-Sc") echo command translated to --> apt-get clean
+  apt-get clean
+  ;;
+  "-Rs") echo command translated to --> apt-get autoremove
+  apt-get autoremove
   ;;
   *) echo "send a pull request to https://github.com/fossasia/mew or make it an issue if its not working"
   ;;

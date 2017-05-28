@@ -26,6 +26,6 @@ case "${array[0]}" in
   "upgrade") echo command translated to --> pacman -Syu
   pacman -Syu
   ;;
-  *) echo "send a pull request to https://github.com/Bashmug/mew or make it an issue if its not working"
+  *) echo "send a pull request to https://github.com/fossasia/mew or make it an issue if its not working"
   ;;
 esac
