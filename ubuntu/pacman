@@ -6,30 +6,66 @@ do
   ((++n))
 done
 case "${array[0]}" in
-  "-S") echo command translated to --> apt install ${array[1]}
-  apt install ${array[1]}
+#Q,Qc,Qi,Ql,Qm,Qo,Qp,Qs,Qu,R,Rs,S,Sc,Scc,Sccc,Si,Sii,Sl,Ss,Su,Suy,Sw,Sy,Syy,U
+  "-Q") echo command translated to --> 	dpkg --list | grep ^i
+  dpkg --list | grep ^i
   ;;
-  "-R") echo command translated to --> apt remove ${array[1]}
-  apt remove ${array[1]}
+  "-Qc") echo command translated to --> apt-get changelog
+  apt-get changelog
   ;;
-  "-Syy") echo command translated to --> apt update
-  apt update
+  "-Qi") echo command translated to --> dpkg -s ${array[1]}
+  dpkg -s ${array[1]}
   ;;
+  "-Ql") echo command translated to --> dpkg -L ${array[1]}
+  dpkg -L ${array[1]}
+  ;;
+  "-Qm") echo command translated to --> deborphan
+  deborphan
+  ;;
+  "-Qo") echo command translated to --> dpkg -S ${array[1]}
+  dpkg -S ${array[1]}
+  ;;
+  "-Qp") echo command translated to --> dpkg -I ${array[1]}
+  dpkg -I ${array[1]}
+  ;;
+  #"-Qs") echo command translated to -->
+
+  #;;
   "-Qu") echo command translated to --> apt list --upgradable
   apt list --upgradable
+  ;;
+  "-Rs" | "-R") echo command translated to --> apt remove ${array[1]}
+  apt remove ${array[1]}
+  ;;
+    "-S") echo command translated to --> apt install ${array[1]}
+  apt install ${array[1]}
+  ;;
+  "-Sc" | "-Scc" | "-Sccc" ) echo command translated to --> apt-get clean
+  apt-get clean
+  ;;
+  #"-Si") echo command translated to -->
+  #;;
+  #"-Sii") echo command translated to -->
+  #;;
+  "-Sl") echo command translated to --> apt-cache dumpavail
+  apt-cache dumpavail
+  ;;
+  "-Ss") echo command translated to --> apt search ${array[1]}
+  apt search ${array[1]}
+  ;;
+  #"-Su") echo command translated to -->
+  #;;
+  "-Sy" | "-Syy") echo command translated to --> apt update
+  apt update
   ;;
   "-Syu") echo command translated to --> apt upgrade
   apt upgrade
   ;;
-  "-Ss") echo command translated to --> apt search
-  apt search
+
+  "-U") echo command translated to --> apt install ${array[1]}
+  apt install ${array[1]}
   ;;
-  "-Sc") echo command translated to --> apt-get clean
-  apt-get clean
-  ;;
-  "-Rs") echo command translated to --> apt-get autoremove
-  apt-get autoremove
-  ;;
+
   *) echo "send a pull request to https://github.com/fossasia/mew or make it an issue if its not working"
   ;;
 esac
