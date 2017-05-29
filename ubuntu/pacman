@@ -61,6 +61,7 @@ case "${array[0]}" in
   "-Syu") echo command translated to --> apt upgrade
   apt upgrade
   ;;
+
   "-U") echo command translated to --> apt install ${array[1]}
   apt install ${array[1]}
   ;;

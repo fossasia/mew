@@ -1,0 +1,26 @@
+#!/bin/bash
+n=0
+for i
+do
+  array[$n]=$i
+  ((++n))
+done
+case "${array[0]}" in
+  "[-a]") echo command translated to --> apt install ${array[1]}
+  apt install ${array[1]}
+  ;;
+  "-C") echo command translated to --> apt remove ${array[1]}
+  apt remove ${array[1]}
+  ;;
+  "-u world") echo command translated to --> apt update
+  apt update
+  ;;
+  "-S") echo command translated to --> apt-cache search
+  apt-cache search
+  ;;
+  "--depclean") echo command translated to --> apt-get autoremove
+  apt-get autoremove
+  ;;
+  *) echo "send a pull request to https://github.com/fossasia/mew or make it an issue if its not working"
+  ;;
+esac
