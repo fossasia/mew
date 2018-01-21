@@ -1,0 +1,78 @@
+{
+	"-Q" : {
+		"debian" : "dpkg -l",
+		"ubuntu" : "dpkg -l"
+	},
+	"-Qc" : {
+		"debian" : "apt changelog",
+		"ubuntu" : "apt changelog"
+	},
+	"-Qi" : {
+		"debian" : "dpkg -s $vars",
+		"ubuntu" : "dpkg -s $vars"
+	},
+	"-Ql":{
+		"debian" : "dpkg -L $vars",
+		"ubuntu" : "dpkg -L $vars"
+	},
+	"-Qm" : {
+		"debian" : "aptitude purge $vars",
+		"ubuntu" : "aptitude purge $vars"
+	},
+	"-Qo" : {
+		"debian" : "dpkg -S $vars",
+		"ubuntu" : "dpkg -S $vars"
+	},
+	"-Qs" : {
+		"debian" : "aptitude search $vars",
+		"ubuntu" : "aptitude search $vars"
+	},
+	"-Qu" : {
+		"debian" : "apt-get upgrade",
+		"ubuntu" : "apt-get upgrade"
+	},
+	"-Rn" : {
+		"debian" : "",
+		"ubuntu" : ""
+	},
+	"-Rns" : {
+		"debian" : "",
+		"ubuntu" : ""
+	},
+	"-Rs" : {
+		"debian" : "apt remove $vars",
+		"ubuntu" : "apt remove $vars"
+	},
+	"-S" : {
+		"debian" : "apt install $vars",
+		"ubuntu" : "apt install $vars"
+	},
+	"-Sc" : {
+		"debian" : "apt autoclean",
+		"ubuntu" : "apt autoclean"
+	},
+	"-Scc" : {
+		"debian" : "apt autoclean",
+		"ubuntu" : "apt autoclean"
+	},
+	"-Si" : {
+		"debian" : "apt-cache show $vars",
+		"ubuntu" : "apt-cache show $vars"
+	},
+	"-Sii" : {
+		"debian" : "apt-cache rdepends $vars",
+		"ubuntu" : "apt-cache rdepends $vars"
+	},
+	"-Sl" : {
+		"debian" : "apt-cache dumpavail",
+		"ubuntu" : "apt-cache dumpavail"
+	},
+	"-Ss" : {
+		"debian" : "apt search $vars",
+		"ubuntu" : "apt search $vars"
+	},
+	"-Syu" : {
+		"debian" : "apt update && apt upgrade",
+		"ubuntu" : "apt update && apt upgrade"
+	}
+}

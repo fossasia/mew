@@ -1,0 +1,26 @@
+{
+	"-q --changelog" : {
+		"debian" : "apt changelog",
+		"ubuntu" : "apt changelog"
+	},
+	"-qi" : {
+		"debian" : "dpkg -s $vars",
+		"ubuntu" : "dpkg -s $vars"
+	},
+	"-ql" : {
+		"debian" : "dpkg -L $vars",
+		"ubuntu" : "dpkg -L $vars"
+	},
+	"-qf" : {
+		"debian" : "dpkg -S $vars",
+		"ubuntu" : "dpkg -S $vars"
+	},
+	"-qp" : {
+		"debian" : "dpkg -I",
+		"ubuntu" : "dpkg -I"
+	},
+	"-qa" : {
+		"debian" : "aptitude search $vars",
+		"ubuntu" : "aptitude search $vars"
+	}
+}
