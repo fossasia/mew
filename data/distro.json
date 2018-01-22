@@ -1,0 +1,10 @@
+{
+	"ubuntu" : "apt",
+	"debian" : "apt",
+	"arch" : "pacman",
+	"redhat" : "dnf",
+	"fedora" : "dnf",
+	"sles" : "zypper",
+	"opensuse" : "zypper",
+	"gentoo" : "emerge"
+}
