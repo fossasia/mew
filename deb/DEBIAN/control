@@ -1,0 +1,7 @@
+Package: Mew 
+Priority: optional 
+Section: misc 
+Maintainer: Maintainer Name 
+Architecture: all 
+Version: 1.0
+Description: any package manager command

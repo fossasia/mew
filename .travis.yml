@@ -4,6 +4,7 @@ language: generic
 sudo: required
 
 before_install:
-    - ./mew
+    - sudo ./build-deb.sh
+    - sudo dpkg -i mew.deb
 
 install: sudo pacman -S vlc
