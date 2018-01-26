@@ -1,10 +1,10 @@
 # Mew
 
-package manger translator
+package manager translator
 
 ![alt text](https://github.com/fossasia/mew/blob/master/graphics/logo.png "kind of a logo")
 
-## Any package manger command on any distro
+## Any package manager command on any distro
 
 ## How to install
 
