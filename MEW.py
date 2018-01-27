@@ -4,6 +4,7 @@ import platform
 import json
 import os
 import re
+import sys
 
 class MEW(object):
 
@@ -20,6 +21,8 @@ class MEW(object):
 	def __init__(self, package_manager, command, arguments):
 
 		self.package_manager = package_manager # package manager in cli
+		if not self.val_pac_manager():
+			sys.exit("Error : '{0}' is not a valid Package Manager".format(self.package_manager))
 		self.command = command # command in cli
 		self.arguments = arguments # args in cli
 		self.version = platform.version().lower() # version of linux
@@ -29,7 +32,7 @@ class MEW(object):
 
 	def val_pac_manager(self):
 
-		if self.package_manager in _managers:
+		if self.package_manager in self._managers:
 			return True
 		return False
 
