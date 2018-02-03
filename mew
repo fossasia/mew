@@ -4,6 +4,9 @@ import sys
 import os
 from MEW import MEW
 
+if len(sys.argv) < 2:
+	sys.exit("Error : No Arguments specified")
+
 packageManager = sys.argv[1]
 commands = []
 arguments = []
