@@ -44,9 +44,7 @@ class MEW(object):
 	def getPackageManager(self):
 
 		distroData = json.load(open(os.path.join(os.path.realpath(__file__).replace("MEW.pyc","").replace("MEW.py","") ,"data", "distro.json")))
-
-		if distroData[self.distro]:
-			return distroData[self.distro]
+		return distroData.get(self.distro)
 
 	def translate(self):
 
