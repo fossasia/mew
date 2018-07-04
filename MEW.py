@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import print_function
 
 import platform
 import json
@@ -74,12 +75,12 @@ class MEW(object):
 	def checkArgs(self):
 
 		if not len(self.arguments):
-			print "Error : Arguments must start with '@'"
+			print("Error : Arguments must start with '@'")
 			return False
 
 		for args in self.arguments:
 			if not args.startswith("@"):
-				print "Error : Arguments must start with '@'"
+				print("Error : Arguments must start with '@'")
 				return False
 
 		return True
