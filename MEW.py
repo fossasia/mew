@@ -31,10 +31,8 @@ class MEW(object):
 		self.translated = self.translate()
 
 	def val_pac_manager(self):
-
-		if self.package_manager in self._managers:
-			return True
-		return False
+		
+		return self.package_manager in self._managers
 
 	def getDistro(self):
 
