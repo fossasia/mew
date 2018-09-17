@@ -8,9 +8,9 @@ package manager translator
 
 ## How to install
 
-    * clone `https://github.com/fossasia/mew.git`
-    * cd mew
-    * ./mew
+   * clone `https://github.com/fossasia/mew.git`
+   * cd mew
+   * ./mew
 
 Arch | pacman | Q | Qc | Qi | Ql | Qm | Qo | Qp | Qs | Qu | Rn | Rns | Rs | S | Sc/Scc | Si | Sii | Sl | Ss | Syu | Sw | Sy | U
 :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--:
@@ -24,10 +24,10 @@ Arch | pacman | Q | Qc | Qi | Ql | Qm | Qo | Qp | Qs | Qu | Rn | Rns | Rs | S | 
 
 To create a Package Manager's data follow these steps:
 
-	* Create a `{{Package Manager}}.json` file.
-	* The `Package Manager` can be any out of `['apt-get','apt','pacman','dnf','rpm','zypper','emerge','equery']`
-	* Add relevant data for distros `['debian','ubuntu','redhat','fedora','sles','opensuse','gentoo']`
-	* Now add data to the JSON file
+* Create a `{{Package Manager}}.json` file.
+* The `Package Manager` can be any out of `['apt-get','apt','pacman','dnf','rpm','zypper','emerge','equery']`
+* Add relevant data for distros `['debian','ubuntu','redhat','fedora','sles','opensuse','gentoo']`
+* Now add data to the JSON file
 	```javascript
 	{
 		"command_1" : {
@@ -47,5 +47,5 @@ To create a Package Manager's data follow these steps:
 		.
 	}
 	```
-	* Save the `{{Package Manager}}.json` file into `data' folder.
-	* Done
+* Save the `{{Package Manager}}.json` file into `data' folder.
+* Done
