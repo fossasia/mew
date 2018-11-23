@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import print_function
 
 import platform
 import json
@@ -31,10 +32,8 @@ class MEW(object):
 		self.translated = self.translate()
 
 	def val_pac_manager(self):
-
-		if self.package_manager in self._managers:
-			return True
-		return False
+		
+		return self.package_manager in self._managers
 
 	def getDistro(self):
 
@@ -45,9 +44,7 @@ class MEW(object):
 	def getPackageManager(self):
 
 		distroData = json.load(open(os.path.join(os.path.realpath(__file__).replace("MEW.pyc","").replace("MEW.py","") ,"data", "distro.json")))
-
-		if distroData[self.distro]:
-			return distroData[self.distro]
+		return distroData.get(self.distro)
 
 	def translate(self):
 
@@ -76,12 +73,12 @@ class MEW(object):
 	def checkArgs(self):
 
 		if not len(self.arguments):
-			print "Error : Arguments must start with '@'"
+			print("Error : Arguments must start with '@'")
 			return False
 
 		for args in self.arguments:
 			if not args.startswith("@"):
-				print "Error : Arguments must start with '@'"
+				print("Error : Arguments must start with '@'")
 				return False
 
 		return True
