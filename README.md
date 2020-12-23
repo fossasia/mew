@@ -1,6 +1,6 @@
 # Mew
 
-package manager translator
+Package Manager Translator
 
 ![alt text](https://github.com/fossasia/mew/blob/master/graphics/logo.png "kind of a logo")
 
