@@ -1,6 +1,6 @@
 # Mew
 
-package manager translator
+Package Manager Translator
 
 ![alt text](https://github.com/fossasia/mew/blob/master/graphics/logo.png "kind of a logo")
 
@@ -47,5 +47,5 @@ To create a Package Manager's data follow these steps:
 		.
 	}
 	```
-* Save the `{{Package Manager}}.json` file into `data' folder.
+* Save the `{{Package Manager}}.json` file into 'data' folder.
 * Done
